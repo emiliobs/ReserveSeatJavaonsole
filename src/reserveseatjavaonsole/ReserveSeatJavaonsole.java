@@ -59,20 +59,21 @@ public class ReserveSeatJavaonsole
                 System.out.print("Seat (between 0 and 9): ");
                 seat = keyboad.nextInt();
 
-                if (row <= 9 && row >= 0)
+                if (row >= 0 && row <= 9)
                 {
-                    if (seat <= 9 && seat >= 0)
+                    if (seat >= 0 && seat <= 9)
                     {
                         thisOk = true;
                     }
                     else
                     {
                         System.out.println("Sorry. The seat number is not valid.");
+                        
                     }
                 }
                 else
                 {
-                    System.out.println("Sorry. The row number in not valid.");
+                    System.out.println("Sorry. The row number in not valid.");                                 
                 }
             }
 
